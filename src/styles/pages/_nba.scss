@@ -1,34 +1,22 @@
-.player-box {
-    height: 120px;
-    max-width: 720px;
-    margin: 1rem auto;
-    padding: 1rem;
-    @include flex(row, flex-end, center);
-    background-repeat: no-repeat;
-    background-position: 10px;
+.marcador {
+    padding: 1rem 2rem;
+    @include flex(row, space-between, center);
+    font-size: 80px;
 
-    &.lakers {
-        border: 5px solid #552582;
-        color: #552582;
-        background-image: url('/assets/img/lakers.svg');
+    .logo {
+
+        img {
+            width: 200px;
+            height: auto;
+        }
+
     }
 
-    &.celtics {
-        border: 5px solid #008348;
-        color: #008348;
-        background-image: url('/assets/img/celtics.svg');
-    }
+    .puntos {
+        @include flex(row, center, center);
 
-    &.bulls {
-        border: 5px solid #CE1141;
-        color: #CE1141;
-        background-image: url('/assets/img/bulls.svg');
+        img {
+            margin: 0 1rem;
+        }
     }
-
-    &.no-team {
-        border: 5px solid grey;
-        color: grey;
-    }
-
 }
-
