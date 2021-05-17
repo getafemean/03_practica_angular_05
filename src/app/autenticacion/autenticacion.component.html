@@ -1,0 +1,13 @@
+<div class="card">
+    <ng-content select="h1"></ng-content>
+    <div>
+        <label>Email</label>
+        <input type="email">
+    </div>
+    <div>
+        <label>Contraseña</label>
+        <input type="password">
+    </div>
+    <ng-content select="[reppass]"></ng-content>
+    <ng-content select="button"></ng-content>
+</div>

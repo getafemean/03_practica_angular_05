@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'p03practicaangular05';
+  titleText: string = 'Iniciar sesión';
+  buttonText: string = 'Enviar';
+  isLogin: boolean = true;
+
+  changeAuth() {
+    this.isLogin = !this.isLogin;
+    if(this.isLogin) {
+      this.titleText = 'Iniciar sesión';
+      this.buttonText = 'Enviar';
+    } else {
+      this.titleText = 'Crear usuario';
+      this.buttonText = 'Añadir';
+    }
+  }
+
+
 }
