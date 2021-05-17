@@ -3,11 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AutenticacionComponent } from './autenticacion/autenticacion.component';
+import { ComponenteEnLineaComponent } from './componente-en-linea/componente-en-linea.component';
+import { MarcadorComponent } from './marcador/marcador.component';
+import { EquipoComponent } from './equipo/equipo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AutenticacionComponent
+    AutenticacionComponent,
+    ComponenteEnLineaComponent,
+    MarcadorComponent,
+    EquipoComponent
   ],
   imports: [
     BrowserModule
