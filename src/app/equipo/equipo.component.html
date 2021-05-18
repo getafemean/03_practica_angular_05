@@ -2,9 +2,9 @@
     <tr *ngFor="let jugador of equipo.jugadores">
         <td>{{jugador.nombre}}</td>
         <td>
-            <button>Libre</button>
-            <button>Doble</button>
-            <button>Triple</button>
+            <button (click)="setCanasta(1, this.jugador.nombre)">Libre</button>
+            <button (click)="setCanasta(2, this.jugador.nombre)">Doble</button>
+            <button (click)="setCanasta(3, this.jugador.nombre)">Triple</button>
         </td>
     </tr>
 </table>
