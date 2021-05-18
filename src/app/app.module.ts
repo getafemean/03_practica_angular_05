@@ -6,6 +6,7 @@ import { AutenticacionComponent } from './autenticacion/autenticacion.component'
 import { ComponenteEnLineaComponent } from './componente-en-linea/componente-en-linea.component';
 import { MarcadorComponent } from './marcador/marcador.component';
 import { EquipoComponent } from './equipo/equipo.component';
+import { TopScoreComponent } from './top-score/top-score.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { EquipoComponent } from './equipo/equipo.component';
     AutenticacionComponent,
     ComponenteEnLineaComponent,
     MarcadorComponent,
-    EquipoComponent
+    EquipoComponent,
+    TopScoreComponent
   ],
   imports: [
     BrowserModule
