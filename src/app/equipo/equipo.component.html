@@ -1,3 +1,10 @@
-<div class="card">
-    <p *ngFor="let jugador of equipo.jugadores">{{jugador.nombre}}</p>
-</div>
+<table [ngClass]="equipo.nombre">
+    <tr *ngFor="let jugador of equipo.jugadores">
+        <td>{{jugador.nombre}}</td>
+        <td>
+            <button>Libre</button>
+            <button>Doble</button>
+            <button>Triple</button>
+        </td>
+    </tr>
+</table>
